@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mikú</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mikú</title>
+  <link rel="icon" href="https://img.genially.com/664a3d6881003d00156701e2/4ee2eb78-df9c-4021-9fbd-1ec2835e0b66.png" type="image/png">
+  <style>
+    body {
+      font-family: "Bookman Old Style", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    nav {
+  background-color: #2e8b57;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;  
+  margin-top: 20px;     
+}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d8b4fe;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto; 
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 78px 15px rgba(0, 0, 0, 0.1);
+    }
+    .content .container {
+      margin: 0 0 40px 0; 
+    }
+
+    h1 {
+      color: #2e8b57;
+      /* Verde oscuro */
+      text-align: center;
+    }
+
+    h2 {
+      color: #6a0dad;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2e8b57;
+    }
+ #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6a0dad;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    #chatbot-btn {
+      position: fixed;
+      bottom: 110px;
+      right: 20px;
+      background: #6a0dad;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #chatbot-window {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 90px;
+      width: 300px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    #chat-header {
+      background: #2e8b57;
+      /* Verde oscuro */
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #chat-body {
+      height: 200px;
+      padding: 10px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    #chat-input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+    
+    .main-container {
+      display: flex;
+      gap: 20px; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 20px 0; /
+}
+.sidebar {
+  width: 220px;
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #6a0dad;
+}
+
+.content {
+  flex: ; 
+}
+     html {
+      scroll-behavior: smooth;
+    }
+    
+  </style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+  
+  </style>
+</head>
+
+<body>
+  <div class="container">
+ <nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#¿Quienes somos?">¿Quienes somos?</a>
+  <a href="#productos">Productos</a>
+  <a href="#contacto">Contacto</a>
+  </nav>
+  </div>
+  
+  <div id="inicio" class="container">
+    <h1>Mikú - Saludable</h1>
+    <h2>¿Qué es Mikú?</h2>
+    <p>
+      Mikú es una microempresa dedicada a la producción y comercialización de arepas artesanales saludables, elaboradas con ingredientes de alta calidad y valor nutricional. Nuestro propósito es posicionar a Mikú como una marca reconocida en el sector, fomentando el crecimiento en el número de clientes y ofreciendo productos que aporten al bienestar y la calidad de vida. En Mikú trabajamos bajo principios de innovación, calidad y responsabilidad, orientados tanto al cuidado de nuestros colaboradores como a la satisfacción de nuestros consumidores. Buscamos que cada cliente encuentre en nuestros productos una experiencia de sabor y nutrición, que genere confianza, satisfacción y reconocimiento en el mercado.
+    </p>
+    <img src="https://img.genially.com/664a3d6881003d00156701e2/c49835e6-ad52-4812-bbec-c448e4b223dc.png" alt="Arepa saludable" width="800" height="800">
+
+    <p>Nos encontramos en el municipio de Fusagasugá, ubicado a suroccidente de Bogotá, que cuenta con una temperatura promedio de 16° centígrados y la altitud de 1.820 m.s.n.m. El clima es templado - frío, lluvioso, y el relieve montañoso y cuenta con una población aproximadamente de 160,296 habitantes, al igual que una extensión de 194,10 Km^2. En concreto, la empresa se encuentra ubicada en la finca San Vicente, en la vereda San José de Piamonte.</p>
+ 
+    <div class="form-container" style="margin-top:40px; text-align:center;">
+    <h2>📋 Encuesta de sastisfación</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6qX6prcxSfuQzsXXZfnYFWYh9QPeJ6aKHCac7395X5DKhaw/viewform?usp=header"
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0"
+      style="border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+      Cargando…
+    </iframe>
+  </div>
+    <div id="¿Quienes somos?" class="container">
+  <h2>¿Quienes somos?</h2>
+  <p>Somos una identidad que buscar el bienestar y la salud de nuestro clientes, por medio de nuestros productos como las arepas artesanales y el café organico. Por lo cual, nos encfocamos en la innovación y la mejora continua. Empezamos siendo un empredimiento hace dos años pero esperamos que pronto lleguemos a ser una emresa que cambie vidas.</p>
+      <h2>Misión</h2>
+      <p> Nuestra misión es la fabricación y comercialización de productos alimenticios saludables de calidad, logrando la satisfacción y confiabilidad de cliente, de igual manera, logrando reconocimiento en los clientes ofreciendo experiencias de sabor y nutrición a los mismos.</p>
+      <h2>Visión</h2>
+      <p>Posicionar a MIKÚ- SALUDABLE como marca comercial fomentado la cantidad de cliente, generar productos de alto valor nutricional ofreciendo calidad, partiendo del bienestar y calidad de vida de los colaboradores, promoviendo innovación y calidad.
+      </p>
+</div>
+    <div id="productos" class="container">
+  <h2>Productos</h2>
+  <p> Puede consultar nuestros productos y los precios de cada uno en el siguiente pdf ...</p>
+      <iframe src="https://drive.google.com/file/d/1lnv84BubJ7BtUeq-OW3jKZouNlQyd124/preview" 
+          width="100%" 
+          height="600px" 
+          style="border:none; display:block; margin:auto;">
+  </iframe>
+</div>
+    <div id="contacto" class="container">
+  <h2>Contacto</h2>
+  <p>WhatsApp: +57 300 123 4567</p>
+  <p>Correo: jrcami@hotmail.com</p>
+   <p> Instragram: @miku_saludable
+     <img src="https://img.genially.com/664a3d6881003d00156701e2/4ee2eb78-df9c-4021-9fbd-1ec2835e0b66.png" 
+     alt="Rubí Jímenez" 
+     width="200" 
+     style="display:block; margin:20px auto; border-radius:50px;">
+
+<p style="text-align:center;">Rubí Jímenez, dueña y fundadora de Mikú saludable</p>
+     <img src="https://i.postimg.cc/J0pzWH32/60e37d0d-150b-4ffe-bbac-f7b5713301f3.jpg" 
+       alt="Jhon Hernández" 
+       width="200" 
+       style="display:block; margin:20px auto; border-radius:50px;">
+     <p style="text-align:center;">Jhon Hernández, Gerente general y creador de la página web. Espero que la creación de este sitio web les facilite a los usuarios navegar de manera interactiva y conocer los productos, servicios y valores de la empresa. Deseo desempeñarme en la atención y gestión de la empresa con el fin de brindar a los usuarios una experiencia única en cada pedido. Actualmente, me encuentro en proceso de investigación para proponer nuevas ideas creativas en la atención al público.</p>
+      <img src="https://i.postimg.cc/52ZGkkVH/b3c92ce0-97d4-42c7-8da7-2d1e4da509de.jpg" 
+       alt="Yineth Castillo" 
+       width="200" 
+       style="display:block; margin:20px auto; border-radius:50px;">
+     <p style="text-align:center;">Yineth Castillo, Subgerente</p>
+      <img src="https://i.postimg.cc/LsL7dB9x/2db01c7a-387d-4be8-ad0f-d7eebe08d8d3.jpg" 
+       alt="Daniel García" 
+       width="200" 
+       style="display:block; margin:20px auto; border-radius:50px;">
+      <p style="text-align:center;">Daniel García, Administrador</p>
+</div>
+    </div>
+      </div>
+  </div>
+<div>
+  <div id="back-to-top" title="Ir arriba">⬆️</div>
+  <div id="chatbot-btn">💬</div>
+  <div id="chatbot-window" style="display:none;">
+    <div id="chat-header">Chat con Mikú</div>
+    <div id="chat-body">
+      <p><b>Mikubot:</b> ¡Hola! ¿En qué puedo ayudarte?</p>
+    </div>
+    <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+  </div>
+  <script>
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    const chatBody = document.getElementById("chat-body");
+    const input = document.getElementById("chat-input");
+    const btn = document.getElementById("chatbot-btn");
+    const windowChat = document.getElementById("chatbot-window");
+    btn.onclick = () => {
+      windowChat.style.display =
+        windowChat.style.display === "none" ? "block" : "none";
+    };
+    input.addEventListener("keypress", function(e) {
+      if (e.key === "Enter" && input.value.trim() !== "") {
+        let userMsg = input.value.trim();
+        chatBody.innerHTML += `<p><b>Tú:</b> ${userMsg}</p>`;
+        input.value = "";
+        setTimeout(() => {
+          let botReply = getBotResponse(userMsg);
+          chatBody.innerHTML += `<p><b>Bot:</b> ${botReply}</p>`;
+          chatBody.scrollTop = chatBody.scrollHeight; // auto scroll
+        }, 500);
+      }
+    });
+
+    function getBotResponse(msg) {
+      msg = msg.toLowerCase();
+     if (msg.includes("hola")) {
+    return "¡Hola! Bienvenido a Mikú 😊 ¿Quieres saber sobre nuestros productos?";
+  } else if (msg.includes("si") || msg.includes("arepa")) {
+    return "Ofrecemos arepas artesanales saludables 🌽💚. ¿Quieres ver el menú?";
+  } else if (msg.includes("contacto")) {
+    return "Puedes escribirnos al WhatsApp 📱 +57 300 123 4567 o al correo contacto@miku.com";
+  } else if (msg.includes("gracias")) {
+    return "¡Con gusto! 💜 ¿Te ayudo en algo más?";
+  } else if (msg.includes("claro")) {
+    return "Te puedo dar los precios de nuestros productos, manejamos productos orgánicos como el café.";
+    } else if (msg.includes("precios")) {
+  return "Tenemos precios desde 5.000 hasta 13.000 💲, si quieres saber a detalle los precios de cada producto puede consultar en nuestra sección de productos."
+    } else if (msg.includes("ubicación")) {
+  return "Estamos en Fusagasugá, en la finca San vicente.";
+  } else {
+    return "Lo siento, aún estoy aprendiendo 🤖. Intenta preguntar por *productos*, *contacto* o salúdame.";
+  }
+}
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
